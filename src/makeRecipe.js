@@ -1,6 +1,6 @@
 import React from "react";
 
-function Recipe({ data, deleteRecipe }) {
+function makeRecipe({ data, deleteRecipe }) {
   return (
     <tr>
       <td>
@@ -24,3 +24,5 @@ function Recipe({ data, deleteRecipe }) {
     </tr>
   );
 }
+
+export default makeRecipe;

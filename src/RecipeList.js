@@ -1,5 +1,5 @@
 import React from "react";
-import Recipe from "./Recipe.js";
+import Recipe from "./makeRecipe.js";
 
 function RecipeList({ recipes, deleteRecipe }) {
   // TODO: Display the list of recipes using the structure of table that is provided.
