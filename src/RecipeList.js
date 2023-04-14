@@ -19,7 +19,7 @@ function RecipeList({ recipes, deleteRecipe }) {
             <th>Actions</th>
           </tr>
         </thead>
-        {recipes.map(singleRecipe => <MakeRecipe data={singleRecipe} deleteRecipe={deleteRecipe} key ={singleRecipe.name}/>)}
+        {recipes.map((singleRecipe, i) => <MakeRecipe data={singleRecipe} deleteRecipe={deleteRecipe} key={singleRecipe.i}/>)}
       </table>
     </div>
   );

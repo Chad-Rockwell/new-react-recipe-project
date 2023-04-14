@@ -26,7 +26,6 @@ function RecipeCreate({ addRecipe }) {
     event.preventDefault();
     console.log(formData);
     addRecipe(formData);
-    console.log("I am hitting submit!!!!!!!!!! dsgsdfgfgfgsdfgdfh");
     setFormData({ ...formDefault });
   }
 
