@@ -35,12 +35,12 @@ function RecipeCreate({ addRecipe }) {
       <table>
         <thead>
         <tr>
-          <th><label htmlFor="name">Name</label></th>
-          <th><label htmlFor="cuisine">Cuisine</label></th>
-          <th><label htmlFor="photo">Photo</label></th>
-          <th><label htmlFor="ingredients">Ingredients</label></th>
-          <th><label htmlFor="preparation">Preparation</label></th>
-          <th>Actions</th>
+          <th><label htmlFor="name"></label></th>
+          <th><label htmlFor="cuisine"></label></th>
+          <th><label htmlFor="photo"></label></th>
+          <th><label htmlFor="ingredients"></label></th>
+          <th><label htmlFor="preparation"></label></th>
+          <th></th>
         </tr>
         </thead>
         <tbody>
@@ -51,6 +51,7 @@ function RecipeCreate({ addRecipe }) {
                 type="text"
                 name="name"
                 id="name"
+                placeholder="Name"
                 value={formData.name}
                 onChange={handleInput}
               />
@@ -61,6 +62,7 @@ function RecipeCreate({ addRecipe }) {
                 type="text"
                 name="cuisine"
                 id="cuisine"
+                placeholder="Cuisine"
                 value={formData.cuisine}
                 onChange={handleInput}
               />
@@ -71,6 +73,7 @@ function RecipeCreate({ addRecipe }) {
                 type="text"
                 name="photo"
                 id="photo"
+                placeholder="Image URL"
                 value={formData.photo}
                 onChange={handleInput}
               />
@@ -81,6 +84,7 @@ function RecipeCreate({ addRecipe }) {
                 type="text"
                 name="ingredients"
                 id="ingredients"
+                placeholder="Ingredients"
                 value={formData.ingredients}
                 onChange={handleInput}
               />
@@ -91,6 +95,7 @@ function RecipeCreate({ addRecipe }) {
                 type="text"
                 name="preparation"
                 id="preparation"
+                placeholder="Preparation"
                 value={formData.preparation}
                 onChange={handleInput}
               />

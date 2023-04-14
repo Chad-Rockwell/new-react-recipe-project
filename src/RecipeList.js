@@ -1,5 +1,5 @@
 import React from "react";
-import Recipe from "./makeRecipe.js";
+import MakeRecipe from "./MakeRecipe.js";
 
 function RecipeList({ recipes, deleteRecipe }) {
   // TODO: Display the list of recipes using the structure of table that is provided.
@@ -19,7 +19,7 @@ function RecipeList({ recipes, deleteRecipe }) {
             <th>Actions</th>
           </tr>
         </thead>
-        <tbody>{Recipe.map(singleRecipe => <Recipe data={singleRecipe} deleteRecipe={deleteRecipe} />)}</tbody>
+        {recipes.map(singleRecipe => <MakeRecipe data={singleRecipe} deleteRecipe={deleteRecipe} key ={singleRecipe.name}/>)}
       </table>
     </div>
   );
